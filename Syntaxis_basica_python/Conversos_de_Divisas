@@ -1,0 +1,20 @@
+# Pedimos la cantidad en pesos mexicanos
+pesos = float(input("¿Cuantos pesos tienes? "))
+
+# Pedimos a que moneda convertir
+print("\n¿A que moneda quieres cambiar?")
+print("1. Dolares (USD)")
+print("2. Euros (EUR)")
+
+opcion = int(input("Eligue una opcion: "))
+
+if opcion == 1:
+    tasa_usd =  18.37
+    dolares = pesos / tasa_usd
+    print(f"Con {pesos:.0f} mexicanos tienes {dolares:.2f} USD")
+elif opcion == 2:
+    tasa_eur = 21.61
+    euros = pesos / tasa_eur
+    print(f"Con {pesos:.0f} mexicanos tienes {euros:.2f} EUR")
+else:
+    print("Opcion Invalida.")
