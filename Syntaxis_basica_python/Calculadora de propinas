@@ -1,0 +1,23 @@
+# Pedimos el total de la cuenta
+cuenta = float(input("Ingresa el total de la cuenta: "))
+
+# Damos a elegir al usuario
+print("\n ¿Que porcentaje de propina vas a dejar?")
+print("1. 10%")
+print("2. 15%")
+print("3. 20%")
+
+opcion = int(input("Eligue una opcion: "))
+
+# Calculamos la opcion que eliga
+if opcion == 1:
+    propina_10 = cuenta * 0.10
+    print(f"10%: {propina_10:.2f} (Total: {cuenta + propina_10:.2f})")
+elif opcion == 2:
+    propina_15 = cuenta * 0.15
+    print(f"15%: {propina_15:.2f} (Total: {cuenta + propina_15:.2f})")
+elif opcion == 3:
+    propina_20 = cuenta * 0.20
+    print(f"20%: {propina_20:.2f} (Total: {cuenta + propina_20:.2f})")
+else:
+    print("Opcion Invalida, intente de nuevo")
