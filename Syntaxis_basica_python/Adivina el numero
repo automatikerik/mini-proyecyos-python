@@ -1,0 +1,18 @@
+import random
+
+numero_secreto = random.randint(1, 10)
+intentos = 3
+
+print("Juego de Adivinar numero")
+print("Adivina el numero del 1 al 10, tienes 3 intentos.")
+
+for i in range(intentos):
+    intento = int(input(f"Intento {i+1}: "))
+    
+    if intento == numero_secreto:
+        print(f"Correcto! El numero era {numero_secreto}")
+        break
+    else:
+        print("Incorrecto")
+else:
+    print(f"Perdiste, el numero era {numero_secreto}")
